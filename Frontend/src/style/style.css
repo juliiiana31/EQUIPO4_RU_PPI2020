@@ -1,0 +1,68 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.form-control::placeholder {
+  color: white;
+}
+
+.input {
+  margin-top: 5px;
+  text-align: center;
+  background-color: #39c339;
+  border: #31a449;
+  width: 300px;
+}
+
+.table-admin{
+  border-collapse: collapse;
+  border: #39c339;
+}
+
+.table-admin > thead > tr > td, .table-admin > thead > tr > th {
+  background-color: #6ECA5F;
+  border: 0px solid #39c339;
+}
+
+.table-admin > tbody > tr:nth-child(2n+1) > td, .table-admin > tbody > tr:nth-child(2n+1) > th {
+  background-color: #4AAE3B;
+  border: 0px;
+}
+
+.table-admin > tbody > tr:nth-child(2n) > td, .table-admin > tbody > tr:nth-child(2n) > th {
+  background-color: #6ECA5F;
+  border: 0px;
+}
+
+.botonesIniciosesion {
+  text-align: center;
+  width: 250px;
+}
+
+
+.letra {
+  color: black;
+}
+
+.table {
+  background-color: white;
+  display: table;
+}
+
+.container {
+  margin-top: 2%;
+}
+.bout{
+  width: 33.33%;
+  text-align: center;
+  background-color: green;
+  color: white;
+}
+
