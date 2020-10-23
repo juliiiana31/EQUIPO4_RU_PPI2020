@@ -18,12 +18,9 @@ class Registro extends React.Component {
             <form>
               <div className="form-group offset-lg-2 row justify-content-center mb-4">
                 <div class="form-group">
-                  <label for="correo">
-                    Correo:
-                  </label>
                   <input
                     type="email"
-                    class="form-control input"
+                    class="form-control justify-content-center input"
                     placeholder="Correo Electronico"
                     id="correo"
                   ></input>
@@ -31,37 +28,32 @@ class Registro extends React.Component {
 
                 <input
                   type="text"
-                  className="form-control input mb-3"
+                  className="form-control input mb-3 "
                   placeholder="Nombre"
                 />
-
                 <input
                   type="text"
-                  className="form-control input mb-3"
+                  className="form-control input mb-3 "
                   placeholder="Apellido"
                 />
-
                 <input
                   type="text"
-                  className="form-control input mb-3"
+                  className="form-control input mb-3 "
                   placeholder="Cédula"
                 />
-
                 <input
                   type="text"
-                  className="form-control input mb-3"
+                  className="form-control justify-content-center input mb-3 "
                   placeholder="Nombre de Usuario"
                 />
-
                 <input
                   type="password"
-                  className="form-control input mb-3"
+                  className="form-control justify-content-center input mb-3  "
                   placeholder="Contraseña"
                 />
               </div>
             </form>
-
-            <div className="d-flex align-start justify-content-center mb-3">
+            <div className="d-flex align-start justify-content-center mb-4">
               <a class="btn btn-success m-3 px-4" href="/" role="button">
                 Regresar
               </a>

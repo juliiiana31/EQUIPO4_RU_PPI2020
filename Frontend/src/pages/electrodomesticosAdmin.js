@@ -53,7 +53,7 @@ class ElectrodomesticosAdmin extends React.Component {
               </tbody>
             </table>
 
-            <div className="d-flex align-start justify-content-center mb-3">
+            <div className="d-flex align-start justify-content-center ">
               <button class="btn btn-success m-3 px-4">Crear</button>
 
               <button class="btn btn-success m-3 px-4">Consultar</button>

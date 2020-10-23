@@ -6,12 +6,12 @@ class Formulario extends React.Component {
     return (
       <div className="row">
         <div className="mx-auto vh-95 principal">
-          <h4 className="mt-4"> Electrodomésticos</h4>
+          <h4 className="mt-4">Electrodomésticos</h4>
           <div>
             <form>
-              <div class="form-group mb-5">
+              <div class="form-group mb-4">
                 <label for="exampleFormControlSelect1"></label>
-                <select class="form-control" 
+                <select className="form-control justify-content-center mb-3 " 
 
                 id="exampleFormControlSelect1">
                   <option>Electrodomésticos presentes</option>
@@ -47,7 +47,7 @@ class Formulario extends React.Component {
                 />
               </div>
 
-              <h4 className="mb-3"> Horas de uso diario</h4>
+              <h4 className="mb-3">Horas de uso diario</h4>
               <div className="col-lg-6 offset-lg-3 justify-content-center mb-5">
                 <input
                   type="number"
@@ -61,7 +61,7 @@ class Formulario extends React.Component {
               <div className="col-lg-6 offset-lg-3 justify-content-center mb-5">
                 <input
                   type="number"
-                  min="1"
+                  min="0"
                   className="form-control input mb-3"
                   placeholder="Consumo Diario"
                 />
@@ -76,7 +76,8 @@ class Formulario extends React.Component {
               </div>
               
               <div>
-                <a class="btn btn-success col-lg-6 offset-lg-3 justify-content-center mb-5" 
+
+                <a class="btn btn-success m-3 px-5 XD" 
                 href="/resultado">
                   Continuar
                 </a>

@@ -25,24 +25,26 @@ class Iniciosesion extends React.Component {
                 placeholder="Contraseña"
               />
             </div>
-            <div className="d-flex align-start justify-content-center mb-3">
-              <a class="btn btn-success m-3 px-4" href="/" role="button">
+            <div className=" d-flex align-start justify-content-center mb-4">
+              <a class="btn btn-success m-3 px-1" href="/" role="button">
                 Regresar
               </a>
               <a
-                class="btn btn-success m-3 px-4"
+                className="btn btn-success  m-3 px-1 "
                 href="/formulario"
                 role="button"
               >
                 Ingresar
               </a>
-              <a class="btn btn-success m-3" href="/electrodomesticosAdmin" role="button">
+              <a className="btn btn-success  m-3 px-1" href="/electrodomesticosAdmin" role="button">
                 Administrador
               </a>
             </div>
-            <div className="col-lg-6 offset-lg-3  row justify-content-center mb-4">
+            <div className="col-lg-6 offset-lg-3  row justify-content-center mb-3">
               <a href="/recuperaciongmail">¿Olvidó su contraseña?</a>
-              <a href="/registro">¿Aún no tiene cuenta? Regístrese</a>
+            </div>
+            <div className="col-lg-6 offset-lg-3  row justify-content-center mb-3">
+            <a href="/registro">¿Aún no tiene cuenta? Regístrese</a>
             </div>
           </div>
         </div>
