@@ -35,4 +35,5 @@ class Resultado extends React.Component {
     );
   }
 }
+
 export default Resultado;

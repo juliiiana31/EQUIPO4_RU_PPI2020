@@ -25,7 +25,6 @@ class Registro extends React.Component {
                     id="correo"
                   ></input>
 
-
                 <input
                   type="text"
                   className="form-control input mb-3 "

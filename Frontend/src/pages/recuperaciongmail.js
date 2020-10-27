@@ -18,17 +18,16 @@ class Recuperaciongmail extends React.Component {
             />
           </div>
           <div className="d-flex align-start justify-content-center">
-          <a
-                class="btn btn-success m-3 px-4"
-                href="/iniciosesion"
-                role="button"
-              >
-                Ingresar
-              </a>
-    
+            <a
+              class="btn btn-success m-3 px-4"
+              href="/iniciosesion"
+              role="button"
+            >
+              Ingresar
+            </a>
           </div>
         </div>
-        </div>
+      </div>
     );
   }
 }
