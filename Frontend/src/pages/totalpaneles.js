@@ -16,7 +16,9 @@ class Resultado extends React.Component {
               />
             </div>
           </div>
-          <h1>-Paneles Solares-</h1>
+          <h3 className="d-flex align-start flex-column bd-highlight mb-3">
+              -Paneles Solares-
+            </h3>
         </div>
         <div>
         <a

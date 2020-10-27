@@ -4,9 +4,9 @@ import Paneles from "../imagenes/Paneles1.PNG";
 class Resultado extends React.Component {
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-sm-4 col-md-4 col-lg-4"></div>
+      
+      <div className="row">
+      <div className="mx-auto vh-95 principal">
           <div>
             <div>
               <img
@@ -16,19 +16,22 @@ class Resultado extends React.Component {
               />
             </div>
           </div>
-          <h1> Horas Pico</h1>
-          <h1> Total Paneles Solares</h1>
+          <h3 className="d-flex align-start flex-column bd-highlight mb-3">
+              Horas Pico
+            </h3>
+            <h3 className="d-flex align-start flex-column bd-highlight mb-3">
+              Total Paneles
+            </h3>
         </div>
         <div>
-        <a
-                class="btn btn-success m-3 px-4"
-                href="/totalpaneles"
-                role="button"
-              >
-                Total Paneles
+        <div className="d-flex align-start justify-content-center mb-4">
+              <a class="btn btn-success m-3 px-4" href="/totalpaneles" role="button">
+                Total de Paneles
               </a>
+              </div>
         </div>
       </div>
+     
     );
   }
 }
