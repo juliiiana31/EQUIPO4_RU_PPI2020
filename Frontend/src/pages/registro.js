@@ -20,7 +20,7 @@ class Registro extends React.Component {
 
                   <input
                     type="email"
-                    class="form-control justify-content-center input"
+                    class="form-control mb-3 input"
                     placeholder="Correo Electronico"
                     id="correo"
                   ></input>
