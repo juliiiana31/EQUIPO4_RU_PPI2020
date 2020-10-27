@@ -16,15 +16,15 @@ class Registro extends React.Component {
               Registrarse
             </h3>
             <form>
-              <div className="form-group offset-lg-2 row justify-content-center mb-4">
-                <div class="form-group">
+              <div className="form-row col justify-content-center">
+
                   <input
                     type="email"
                     class="form-control justify-content-center input"
                     placeholder="Correo Electronico"
                     id="correo"
                   ></input>
-                </div>
+
 
                 <input
                   type="text"
@@ -53,7 +53,7 @@ class Registro extends React.Component {
                 />
               </div>
             </form>
-            <div className="d-flex align-start justify-content-center mb-4">
+            <div className=" d-flex align-start justify-content-center mb-4">
               <a class="btn btn-success m-3 px-4" href="/" role="button">
                 Regresar
               </a>

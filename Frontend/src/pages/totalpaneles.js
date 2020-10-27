@@ -4,9 +4,9 @@ import Paneles from "../imagenes/Paneles2.PNG";
 class Resultado extends React.Component {
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-sm-4 col-md-4 col-lg-4"></div>
+      <div className="row">
+      <div className="mx-auto vh-95 principal">
+          <div className="container"></div>
           <div>
             <div>
               <img
@@ -16,10 +16,13 @@ class Resultado extends React.Component {
               />
             </div>
           </div>
-          <h3 className="d-flex align-start flex-column bd-highlight mb-3">
+          
+          <h3 className="d-flex align-start justify-content-center">
               -Paneles Solares-
             </h3>
+            
         </div>
+        <div className="col-lg-9 offset-lg-6 row justify-content-center mb-6"></div>
         <div>
         <a
                 class="btn btn-success m-3 px-4"
