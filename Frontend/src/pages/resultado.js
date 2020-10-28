@@ -26,9 +26,9 @@ class Resultado extends React.Component {
                 placeholder="Ingrese potencia del panel"
               ></input>
             </div>
-            <button type="submit" class="btn btn-success ">
-              <strong> Total paneles </strong>
-            </button>
+            <a type="submit" class="btn btn-success " href="/totalpaneles">
+              <strong> Total paneles </strong> 
+            </a>
           </form>
         </div>
       </div>
