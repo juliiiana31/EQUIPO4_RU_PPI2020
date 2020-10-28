@@ -34,7 +34,7 @@ class Resultado extends React.Component {
             </a>
           </form>
         </div>
-      </div>
+      </div> 
     );
   }
 }

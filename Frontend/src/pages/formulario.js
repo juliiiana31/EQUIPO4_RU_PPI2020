@@ -73,7 +73,7 @@ class Formulario extends React.Component {
 
                 <button class="btn btn-success m-3 px-4">Modificar</button>
 
-                <button class="btn btn-success m-3 px-4">Eiminar</button>
+                <button class="btn btn-success m-3 px-4">Eliminar</button>
               </div>
 
               <div>
