@@ -62,10 +62,11 @@ class ElectrodomesticosAdmin extends React.Component {
 
               <button class="btn btn-success m-3 px-4">Eiminar</button>
             </div>
-            <a type="submit" class="btn btn-success m-3 px-4" href="/iniciosesion">
+            <a type="submit" class="btn btn-success m-3 px-3 " href="/iniciosesion">
                Regresar
             </a>
-            <a type="submit" class="btn btn-success m-3 px-4" href="/resultado">
+
+            <a type="submit" class="btn btn-success m-3 px-4 " href="/resultado">
                Continuar
             </a>
           </div>
