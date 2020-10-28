@@ -2,7 +2,7 @@ import React from "react";
 import "../style/style.css";
 class Resultado extends React.Component {
   render() {
-    return (
+    return (    
       <div className="row">
         <div className="mx-auto vh-95 principal">
           <form>
