@@ -62,6 +62,7 @@ class ElectrodomesticosAdmin extends React.Component {
 
               <button class="btn btn-success m-3 px-4">Eiminar</button>
             </div>
+<div></div>
           </div>
         </div>
       </div>
