@@ -25,6 +25,9 @@ class Recuperaciongmail extends React.Component {
             >
               Ingresar
             </a>
+            <a type="submit" class="btn btn-success m-3 px-4" href="/iniciosesion">
+               Regresar
+            </a>
           </div>
         </div>
       </div>
