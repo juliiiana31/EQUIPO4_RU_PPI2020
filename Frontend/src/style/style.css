@@ -25,6 +25,7 @@ html, body {
 .table-admin{
   border-collapse: collapse;
   border: #39c339;
+
 }
 
 .table-admin > thead > tr > td, .table-admin > thead > tr > th {
