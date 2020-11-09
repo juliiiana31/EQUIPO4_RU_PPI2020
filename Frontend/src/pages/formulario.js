@@ -77,8 +77,11 @@ class Formulario extends React.Component {
               </div>
 
               <div>
-                <a class="btn btn-success m-3 px-5 XD" href="/resultado">
-                  Continuar
+                <a class="btn btn-success m-3 px-4 XD" href="/iniciosesion">
+                  Regresar
+                </a>
+                <a class="btn btn-success m-3 px-4 XD" href="/resultado">
+                 Continuar 
                 </a>
               </div>
             </form>

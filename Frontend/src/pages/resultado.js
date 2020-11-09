@@ -18,13 +18,15 @@ class Resultado extends React.Component {
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Potencial panel</label>
-              <input
+                <input
                 type="email"
                 class="form-control input"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
-                placeholder="Ingrese potencia del panel"
-              ></input>
+                placeholder="Ingrese horas solar pico">
+
+                </input>
+                
             </div>
             <a type="submit" class="btn btn-success m-3 px-3 " href="/totalpaneles">
               Total paneles  

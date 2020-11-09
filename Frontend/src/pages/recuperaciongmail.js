@@ -23,7 +23,7 @@ class Recuperaciongmail extends React.Component {
               href="/iniciosesion"
               role="button"
             >
-              Ingresar
+              Enviar
             </a>
             <a type="submit" class="btn btn-success m-3 px-4" href="/iniciosesion">
                Regresar
