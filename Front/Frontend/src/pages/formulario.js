@@ -11,6 +11,20 @@ class Formulario extends React.Component {
             <form>
               <div class="form-group mb-4">
                 <label for="exampleFormControlSelect1"></label>
+                <select
+                  className="form-control justify-content-center mb-3 "
+                  id="exampleFormControlSelect1"
+                >
+                  <option>Electrodomésticos presentes</option>
+                  <option>Lavadora</option>
+                  <option>Nevera</option>
+                  <option>Horno microondas</option>
+                  <option>Olla arrocera</option>
+                  <option>Planchaasasasasasa de ropa</option>
+                  <option>Computadora</option>
+                  <option>Celular</option>
+                  <option>bombillo</option>
+                </select>
               </div>
             </form>
             <form>
