@@ -1,6 +1,6 @@
 const express=require('express');
 const app=express();
-//const electrodomesticos=require('./routes/electrodomesticos'); // defino todos los middleware de los modulo
+const electrodomesticos=require('./routes/electrodomesticos'); // defino todos los middleware de los modulo
 const usuario=require('./routes/usuario'); 
 const paneles_solares=require('./routes/panel_solar');
 
@@ -12,7 +12,7 @@ app.use(express.json());
 // ajustess
 // defino middleware
 app.use('/api',paneles_solares);
-//app.use('/api/electrodomesticos',electrodomesticos); 
+app.use('/api/electrodomesticos',electrodomesticos); 
 app.use('/api/usuario',usuario);
 
 
