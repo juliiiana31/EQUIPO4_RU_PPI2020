@@ -7,14 +7,14 @@ class Inicio extends React.Component {
       <div className="row">
         <div className="mx-auto vh-95 principal">
           <div>
-            <img src={Logo} class="rounded mx-auto d-block mb-5" alt="logo" />
+            <img src={Logo} className="rounded mx-auto d-block mb-5" alt="logo" />
           </div>
           <div className="d-flex align-start flex-column bd-highlight mb-3">
-            <a class="btn btn-success m-3" href="/registro" role="button">
+            <a className="btn btn-success m-3" href="/registro" role="button">
               Registrarse
             </a>
 
-            <a class="btn btn-success m-3" href="/iniciosesion">
+            <a className="btn btn-success m-3" href="/iniciosesion">
               Ingresar
             </a>
           </div>

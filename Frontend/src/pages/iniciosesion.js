@@ -7,7 +7,7 @@ class Iniciosesion extends React.Component {
       <div className="row">
         <div className="mx-auto vh-95 principal">
           <div>
-            <img src={Logo} class="rounded mx-auto d-block mb-5" alt="logo" />
+            <img src={Logo} className="rounded mx-auto d-block mb-5" alt="logo" />
           </div>
           <div className="d-flex align-start flex-column bd-highlight mb-3">
             <h3 className="col-lg-6 offset-lg-3  row justify-content-center mb-4">
@@ -26,7 +26,7 @@ class Iniciosesion extends React.Component {
               />
             </div>
             <div className=" d-flex align-start justify-content-center mb-4">
-              <a class="btn btn-success m-3 px-1" href="/" role="button">
+              <a className="btn btn-success m-3 px-1" href="/" role="button">
                 Regresar
               </a>
               <a

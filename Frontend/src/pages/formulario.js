@@ -69,18 +69,18 @@ class Formulario extends React.Component {
               </div>
 
               <div className="d-flex align-start justify-content-center mb-3">
-                <button class="btn btn-success m-3 px-4">Agregar</button>
+                <button className="btn btn-success m-3 px-4">Agregar</button>
 
-                <button class="btn btn-success m-3 px-4">Modificar</button>
+                <button className="btn btn-success m-3 px-4">Modificar</button>
 
-                <button class="btn btn-success m-3 px-4">Eliminar</button>
+                <button className="btn btn-success m-3 px-4">Eliminar</button>
               </div>
 
               <div>
-                <a class="btn btn-success m-3 px-4 XD" href="/iniciosesion">
+                <a className="btn btn-success m-3 px-4 XD" href="/iniciosesion">
                   Regresar
                 </a>
-                <a class="btn btn-success m-3 px-4 XD" href="/resultado">
+                <a className="btn btn-success m-3 px-4 XD" href="/resultado">
                  Continuar 
                 </a>
               </div>

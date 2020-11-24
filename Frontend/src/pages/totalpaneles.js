@@ -12,7 +12,7 @@ class Resultado extends React.Component {
           <p> Para las caracteristicas de su hogar se recomiendan: </p> 
         <div className="d-flex align-start flex-column bd-highlight mb-3">
        
-        <a class="btn btn-success" href="/">
+        <a className="btn btn-success" href="/">
           Cerrar Sesión
         </a>
         </div>

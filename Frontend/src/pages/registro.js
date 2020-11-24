@@ -8,7 +8,7 @@ class Registro extends React.Component {
       <div className="container">
         <div className="mx-auto vh-95 principal">
           <div>
-            <img src={Logo} class="rounded mx-auto d-block mb-5" alt="logo" />
+            <img src={Logo} className="rounded mx-auto d-block mb-5" alt="logo" />
           </div>
 
           <div className="">
@@ -53,11 +53,11 @@ class Registro extends React.Component {
               </div>
             </form>
             <div className=" d-flex align-start justify-content-center mb-4">
-              <a class="btn btn-success m-3 px-4" href="/" role="button">
+              <a className="btn btn-success m-3 px-4" href="/" role="button">
                 Regresar
               </a>
               <a
-                class="btn btn-success m-3 px-4"
+                className="btn btn-success m-3 px-4"
                 href="/iniciosesion"
                 role="button"
               >

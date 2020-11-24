@@ -6,7 +6,7 @@ class Recuperaciongmail extends React.Component {
     return (
       <div className="row">
         <div className="mx-auto vh-95 principal">
-          <img src={Logo} class="rounded mx-auto d-block mb-5" alt="logo" />
+          <img src={Logo} className="rounded mx-auto d-block mb-5" alt="logo" />
           <h3 className="col-lg-12 offset-lg-0 row justify-content-center mb-4">
             Recuperar tu cuenta
           </h3>
@@ -25,7 +25,7 @@ class Recuperaciongmail extends React.Component {
             >
               Enviar
             </a>
-            <a type="submit" class="btn btn-success m-3 px-4" href="/iniciosesion">
+            <a type="submit" className="btn btn-success m-3 px-4" href="/iniciosesion">
                Regresar
             </a>
           </div>

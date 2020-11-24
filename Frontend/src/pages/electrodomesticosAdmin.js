@@ -54,19 +54,19 @@ class ElectrodomesticosAdmin extends React.Component {
             </table>
 
             <div className="d-flex align-start justify-content-center ">
-              <button class="btn btn-success m-3 px-4">Crear</button>
+              <button className="btn btn-success m-3 px-4">Crear</button>
 
-              <button class="btn btn-success m-3 px-4">Consultar</button>
+              <button className="btn btn-success m-3 px-4">Consultar</button>
 
-              <button class="btn btn-success m-3 px-4">Editar</button>
+              <button className="btn btn-success m-3 px-4">Editar</button>
 
-              <button class="btn btn-success m-3 px-4">Eiminar</button>
+              <button className="btn btn-success m-3 px-4">Eiminar</button>
             </div>
-            <a type="submit" class="btn btn-success m-3 px-3 " href="/iniciosesion">
+            <a type="submit" className="btn btn-success m-3 px-3 " href="/iniciosesion">
                Regresar
             </a>
 
-            <a type="submit" class="btn btn-success m-3 px-4 " href="/resultado">
+            <a type="submit" className="btn btn-success m-3 px-4 " href="/resultado">
                Continuar
             </a>
           </div>
