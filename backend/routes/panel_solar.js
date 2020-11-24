@@ -33,10 +33,20 @@ router.post('/paneles_solares/agregar', (req, res) => {
    mysqlConnection.query(codigoNuevo, codigoArray, (err, result, fields) => {
       if (err) {
          return console.error(err.message);
+         res.json({ message:'Error al guardar ' })
       }
       res.json({ message: 'Panel solar creado', })
    });
 });
+
+/* ELECTRODOMESTICO varchar(50) NOT NULL,
+  CANTIDAD int(20) NOT NULL,
+  POTENCIA int(150) NOT NULL,
+  HORAUSO_DIARIO int(24) NOT NULL,
+  CONSUMO_DIARIO int(24) NOT NULL,
+  HORAS_PICO_SOLAR int(20) NOT NULL,
+  CODIGO int(20) NOT NULL,
+  PRIMARY KEY (CODIGO) */
 
 //actualizar 
 router.put('/paneles_solares/:codigo', (req, res) => {
