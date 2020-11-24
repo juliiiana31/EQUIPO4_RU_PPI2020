@@ -1,66 +1,68 @@
-const express =require('express');// tabnine
-const router= express.Router();
-const mysqlConnection =require('../db/db');
+const express = require('express');// tabnine
+const router = express.Router();
+const mysqlConnection = require('../db/db');
 
 // Colocar los middlewares  
-router.get('/paneles_solares',(req,res)=>{
-    mysqlConnection.query('SELECT * from PANELES_SOLARES',(err,rows,fiels)=>{
-    if(!err){
-       res.json(rows); 
-    }else{
-    console.log(err);
-    }});
-    })// fin
+router.get('/paneles_solares', (req, res) => {
+   mysqlConnection.query('SELECT * from PANELES_SOLARES', (err, rows, fiels) => {
+      if (!err) {
+         res.json(rows);
+      } else {
+         console.log(err);
+      }
+   });
+})// fin
 
 // traer un panel
-router.get('/paneles_solares/:codigo',(req,res)=>{
-   const { codigo } = req.params; 
-   mysqlConnection.query('SELECT * from PANELES_SOLARES  where codigo = ?',[codigo], (err,rows,fiels)=>{
-   if(!err){
-      res.json(rows); 
-   }else{
-      console.log(err);
-        }});
-        })// fin
+router.get('/paneles_solares/:codigo', (req, res) => {
+   const { codigo } = req.params;
+   mysqlConnection.query('SELECT * from PANELES_SOLARES  where CODIGO = ' + codigo, (err, rows, fiels) => {
+      if (!err) {
+         res.json(rows);
+      } else {
+         console.log(err);
+      }
+   });
+})// fin
 
-/* //agregar
-router.post('/paneles_solares/agregar',(req,res=>{
-   const { codigo } = req.body;
-   let codigoArray = { codigo };
-   let codigoNuevo = 'INSERT INTO panel(codigo) VALUES (?)';
-   mysqlConnection.query(codigoNuevo, codigoArray,(err, result,fields)=>{
+//agregar un panel solar
+router.post('/paneles_solares/agregar', (req, res) => {
+   const { ELECTRODOMESTICO, CANTIDAD, POTENCIA, HORAUSO_DIARIO, CONSUMO_DIARIO, HORAS_PICO_SOLAR, CODIGO } = req.body;
+   let codigoArray = [ELECTRODOMESTICO, CANTIDAD, POTENCIA, HORAUSO_DIARIO, CONSUMO_DIARIO, HORAS_PICO_SOLAR, CODIGO];
+   let codigoNuevo = `INSERT INTO PANELES_SOLARES(ELECTRODOMESTICO, CANTIDAD, POTENCIA, HORAUSO_DIARIO, CONSUMO_DIARIO, HORAS_PICO_SOLAR, CODIGO) VALUES (?,?,?,?,?,?,?)`;
+   mysqlConnection.query(codigoNuevo, codigoArray, (err, result, fields) => {
       if (err) {
          return console.error(err.message);
       }
-      res.json({message:'Panel solar creado', })
-   });
-}));
-
-//actualizar 
-router.put('/paneles_solares/:id', (req,res)=>{
-   const { codigo } = req.body;
-   const { id } = req.params;
-   mysqlConnection.query('UPDATE paneles SET codigo = ? WHERE id = ?',
-   [codigo, id], (err,rows, fields) =>{
-      if (!err){
-         res.json({status: 'Panel solar actualizado'});
-      }else{
-         console.log(err);
-      }
+      res.json({ message: 'Panel solar creado', })
    });
 });
 
-router.delete('/paneles_solares/:id', (req,res)=>{
-   const { id } = req.params;
-   mysqlConnection.query('DELETE FROM paneles WHERE id = ?',
-   [id], (err,rows, fields) =>{
-      if (!err){
-         res.json({status: 'Panel solar eliminado!'});
-      }else{
-         console.log(err);
-      }
-   });
-}); */
+//actualizar 
+router.put('/paneles_solares/:codigo', (req, res) => {
+   const { ELECTRODOMESTICO, CANTIDAD, POTENCIA, HORAUSO_DIARIO, CONSUMO_DIARIO, HORAS_PICO_SOLAR, CODIGO } = req.body;
 
-module.exports =router;
+   const { codigo } = req.params;
+   mysqlConnection.query(`UPDATE PANELES_SOLARES SET ELECTRODOMESTICO=?, CANTIDAD=?, POTENCIA=?, HORAUSO_DIARIO=?, CONSUMO_DIARIO=?, HORAS_PICO_SOLAR=?, CODIGO=? WHERE CODIGO = ?`,
+      [ELECTRODOMESTICO, CANTIDAD, POTENCIA, HORAUSO_DIARIO, CONSUMO_DIARIO, HORAS_PICO_SOLAR, CODIGO, codigo], (err, rows, fields) => {
+         if (!err) {
+            res.json({ status: 'Panel solar actualizado' });
+         } else {
+            console.log(err);
+         }
+      });
+});
 
+router.delete('/paneles_solares/:codigo', (req, res) => {
+   const { codigo } = req.params;
+   mysqlConnection.query('DELETE FROM PANELES_SOLARES WHERE CODIGO= ?',
+      [codigo], (err, rows, fields) => {
+         if (!err) {
+            res.json({ status: 'Panel solar eliminado!' });
+         } else {
+            console.log(err);
+         }
+      });
+});
+
+module.exports = router;
